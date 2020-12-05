@@ -23,7 +23,7 @@ func getIPs() (ip string) {
 
 func helloHandler(w http.ResponseWriter, r *http.Request) {
 	str := string(getIPs())
-	fmt.Fprintf(w, str)
+	fmt.Fprintf(w, "My Ip : "+str)
 }
 
 func main() {
